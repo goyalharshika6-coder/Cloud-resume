@@ -1,36 +1,72 @@
-# Cloud Resume Challenge
+# ☁️ Cloud Resume Challenge
 
-A serverless cloud portfolio website built using AWS services.
+A serverless cloud portfolio website built using AWS services to demonstrate cloud engineering skills and modern serverless architecture.
 
-## Architecture
+---
 
-S3 → Static Website Hosting
+## 📌 Project Overview
 
-API Gateway → REST API Endpoint
+This project is a personal cloud portfolio website hosted on Amazon S3 and enhanced with a serverless visitor counter using AWS Lambda, API Gateway, and DynamoDB.
 
-Lambda → Visitor Counter Logic
+The goal of this project is to gain hands-on experience with core AWS services while building a real-world cloud application.
 
-DynamoDB → Store Visitor Count
+---
 
-## Features
+## 🏗️ Architecture
 
-- Static portfolio website
-- Visitor counter
-- Serverless architecture
-- Hosted on AWS
-- GitHub version control
-
-## AWS Services Used
-
-- Amazon S3
-- AWS Lambda
-- Amazon DynamoDB
-- Amazon API Gateway
-- IAM
-
-## Project Structure
-
+```text
+User
+  ↓
+Amazon S3 (Static Website Hosting)
+  ↓
+API Gateway
+  ↓
+AWS Lambda
+  ↓
+Amazon DynamoDB
 ```
+
+---
+
+## 🚀 Features
+
+- Responsive Portfolio Website
+- Static Website Hosting with Amazon S3
+- Visitor Counter Implementation
+- Serverless Backend Architecture
+- REST API using API Gateway
+- Visitor Data Storage using DynamoDB
+- Fully Cloud-Native Deployment
+
+---
+
+## 🛠️ AWS Services Used
+
+| Service | Purpose |
+|----------|----------|
+| Amazon S3 | Static website hosting |
+| API Gateway | REST API endpoint |
+| AWS Lambda | Visitor counter logic |
+| DynamoDB | Visitor count storage |
+| IAM | Secure permissions management |
+
+---
+
+## 🔄 Visitor Counter Workflow
+
+1. User opens the website.
+2. JavaScript sends a request to API Gateway.
+3. API Gateway invokes Lambda.
+4. Lambda reads the current count from DynamoDB.
+5. Lambda increments the count.
+6. Updated value is stored back in DynamoDB.
+7. New count is displayed on the website.
+
+---
+
+## 📂 Project Structure
+
+```text
 cloud-resume/
 │
 ├── index.html
@@ -39,20 +75,36 @@ cloud-resume/
 └── README.md
 ```
 
-## Visitor Counter Flow
+---
 
-1. User opens website
-2. JavaScript calls API Gateway
-3. API Gateway triggers Lambda
-4. Lambda updates count in DynamoDB
-5. Updated count is returned to website
+## 🧠 Skills Demonstrated
 
-## Author
+- Cloud Computing
+- AWS Fundamentals
+- Serverless Architecture
+- REST APIs
+- JavaScript
+- Git & GitHub
+- Infrastructure Integration
 
-Harshika Goyal
+---
+
+## 📸 Project Screenshot
+
+
+
+
+---
+
+## 👩‍💻 Author
+
+**Harshika Goyal**
 
 LinkedIn:
 https://www.linkedin.com/in/harshika-goyal-853145326/
 
 GitHub:
 https://github.com/goyalharshika6-coder
+
+---
+Built with ❤️ using AWS Cloud Services.
