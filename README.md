@@ -91,8 +91,7 @@ cloud-resume/
 
 ## 📸 Project Screenshot
 
-
-
+Screenshot 2026-06-14 014023.png
 
 ---
 
